@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Formulario</title>
+        <style>
+            .nm {
+                margin: 5px;
+            }
+            .gm {
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Que piensas ?</h1>
+        <h3>Primero, dinos quien eres</h3>
+        <form>
+            <div class="nm">
+            <label for="nya">Nombre y apellidos:</label>
+            <input type="text" id="nya" name="nya" required>
+            </div>
+            <div class="gm">
+            <label for="gmail">Correo electrónico:</label>
+            <input type="text" id="gmail" name="gmail" required>
+            </div>
+            <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad">
+            </div>
+        </form>
+        <h3>Cuál es tu película favorita ?</h3>
+        <form>
+            <div>
+            <input type="radio" id="viaje" name="peli" value="viaje">
+            <label for="viaje">Viaje de Chihiro</label>
+            </div>
+            <div>
+            <input type="radio" id="castillo" name="peli" value="castillo">
+            <label for="castillo">EL castillo ambulante</label>
+            </div>
+            <div>
+            <input type="radio" id="totoro" name="peli" value="totoro">
+            <label for="totoro">Mi vecino totoro</label>
+            </div>
+            <div>
+            <input type="radio" id="otra" name="peli" value="otra">
+            <lable for="otra">Otra</lable>
+            </div>
+        </form>
+        <h3>Cuál es tu genero favorito ?</h3>
+        <form>
+            <label for="genero">Escoge un genero:</label>
+            <select id="genero" name="genero">
+                <option value="drama">Drama</option>
+                <option value="aventura">Aventura</option>
+                <option value="ficcion">Ciencia ficción</option>
+                <option value="bélica">Bélica</option>
+                <option value="otro">Otro</option>
+            </select>
+        </form>
+        <h3>Cuál es tu fundador favorito de Studio Ghibli </h3>
+        <form>
+            <div>
+            <input type="checkbox" id="miyazaki" name="fundador1" value="miyazaki">
+            <label for="fundador1">Hayao Miyazaki</label>
+            </div>
+            <div>
+            <input type="checkbox" id="takahata" name="fundador2" value="takahata">
+            <label for="fundador2">Isao Takahata</label>
+            </div>
+            <div>
+            <input type="checkbox" id="suzuki" name="fundador3" value="suzuki">
+            <label for="fundador3">Toshio Suzuki</label>
+            </div>
+            <div>  
+            <input type="checkbox" id="tokuma" name="fundador4" value="tokuma">
+            <label for="fundador4">Yasuyoshi Tokuma</label>
+            </div>
+        </form> 
+        <p>Hay algo en particular que te guste del fundador que has escogdo ?</p>
+        <form>
+            <textarea name="message" rows="8" cols="40">Me gusta este fundador porque...</textarea>
+        </form>
+        <form action="/que_en_penses_enviat.html">
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
