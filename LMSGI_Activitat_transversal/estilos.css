@@ -1,5 +1,5 @@
 /* El titulo de la pagina */
-header {
+.titulo {
     text-align: center;
     padding: 20px;
     background-image: url(https://camaracivica.com/wp-content/uploads/2016/07/ghibli1.jpg);
@@ -116,4 +116,10 @@ li.OD {
     .column {
         min-width: 100%;
     }
+}
+/* noticias recientes */
+.NR {
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://camaracivica.com/wp-content/uploads/2016/07/ghibli1.jpg);
 }
