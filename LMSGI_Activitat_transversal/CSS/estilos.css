@@ -21,7 +21,6 @@ ul {
     overflow: hidden;
     background-color: rgb(100, 15, 238);
     font-size: 13px;
-    position:fixed;
     width: 100%;
 }
 li {
@@ -73,22 +72,179 @@ li.OD {
   }
   
   /* PELICULAS*/
-  /*chihiro*/
-  .chi { 
-    font-family: arial;
-    border: 2px solid black;
-    padding: 30px;
-    background-repeat:repeat-x;
-    color: aliceblue;
-  }
- /*Mononoke*/
+  /*titulo de cada peli*/
+.chi { 
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  color: aliceblue;
+  font-size: 300%;
+}
+.totoro  { 
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  color: aliceblue;
+  font-size: 300%;
+}
  .noke { 
     font-family: arial;
     border: 2px solid black;
-    padding: 25px;
-    background-repeat:repeat-x;
+    padding: 5px;
     color: aliceblue;
     font-size: 300%;
+}
+.tumba  { 
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.castillo {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.kiki {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.acantilado {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.levanta {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.nau {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.diminutos {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.recuerdos {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.cielo {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.Rosso {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.pom {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.susurros {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.vecino {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.terra {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%
+}
+.gatos {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.amapolas {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.princesa {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.Marnie {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
+}
+.earwig {
+  font-family: arial;
+  border: 2px solid black;
+  padding: 5px;
+  background-repeat:repeat-x;
+  color: aliceblue;
+  font-size: 300%;
 }
 * {
   box-sizing: border-box;
@@ -184,3 +340,42 @@ li.OD {
   background-color: rgb(255, 253, 253);
   color: rgb(12, 12, 12);
 }
+/* Museo*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+/* Left and right column */
+.column.side {
+  width: 15%;
+}
+.museo {
+	background-image: url(/Img/museo.webp)
+  height: 50%
+}
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
