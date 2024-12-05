@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>Formulario</title>
+        <link rel="stylesheet" href="/CSS/estilos.css">
+        <link rel="stylesheet" href="/CSS/estiloA.css">
         <style>
             .nm {
                 margin: 5px;
@@ -8,29 +10,53 @@
             .gm {
                 margin: 5px;
             }
+            #fd {
+                text-align: center;
+            }
         </style>
     </head>
-    <body>
-        <h1>Que piensas ?</h1>
+    <body id="fd">
+        <div class="topnav">
+            <ul>
+                <li><a href="/index .html">INICIO</a></li>
+                <li><a href="creadores2.html">CREADORES</a></li>
+                <li><a href="/peliculas.html">PELICULAS</a></li>
+                <li class="desplegable">
+                  <a class="opciones">MÁS SOBRE GHIBLI</a>
+                  <div class="contenido">
+                    <a href="/Museo_ghibli.html">MUSEO GHIBLI</a>
+                    <a href="/parque.html">PARQUE TEMÁTICO</a>
+                  </div>
+                </li>
+                <li><a href="/Formulario/que_en_penses.html">FORMULARIO</a></li>
+                <li><a href="/nosotras.html">SOBRE NOSOTRAS</a></li>
+                <li><a href="Galeria.html">GALERIA</a></li>
+                </li>
+            </ul>
+          </div>
+        <div class="quep">
+        <h1 id="qp">Que piensas ?</h1>
         <h3>Primero, dinos quien eres</h3>
-        <form>
+        <form id="pg">
             <div class="nm">
             <label for="nya">Nombre y apellidos:</label>
             <input type="text" id="nya" name="nya" required>
             </div>
             <div class="gm">
             <label for="gmail">Correo electrónico:</label>
-            <input type="text" id="gmail" name="gmail" required>
+            <input type="email" id="gmail" name="gmail" required>
             </div>
             <div>
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad">
+            <input type="number" id="edad" name="edad" required>
             </div>
+        </div>
         </form>
+        <div class="cualf">
         <h3>Cuál es tu película favorita ?</h3>
-        <form>
+        <form id="pf">
             <div>
-            <input type="radio" id="viaje" name="peli" value="viaje">
+            <input type="radio" id="viaje" name="peli" value="viaje" checked>
             <label for="viaje">Viaje de Chihiro</label>
             </div>
             <div>
@@ -45,9 +71,11 @@
             <input type="radio" id="otra" name="peli" value="otra">
             <lable for="otra">Otra</lable>
             </div>
+        </div>
+        <div class="cualg">
         </form>
         <h3>Cuál es tu genero favorito ?</h3>
-        <form>
+        <form id="gf">
             <label for="genero">Escoge un genero:</label>
             <select id="genero" name="genero">
                 <option value="drama">Drama</option>
@@ -57,8 +85,10 @@
                 <option value="otro">Otro</option>
             </select>
         </form>
+        </div>
+        <div class="cualff">
         <h3>Cuál es tu fundador favorito de Studio Ghibli </h3>
-        <form>
+        <form id="ff">
             <div>
             <input type="checkbox" id="miyazaki" name="fundador1" value="miyazaki">
             <label for="fundador1">Hayao Miyazaki</label>
@@ -76,16 +106,21 @@
             <label for="fundador4">Yasuyoshi Tokuma</label>
             </div>
         </form> 
-        <p>Hay algo en particular que te guste del fundador que has escogdo ?</p>
-        <form>
-            <textarea name="message" rows="8" cols="40">Me gusta este fundador porque...</textarea>
+        </div>
+        <div class="algo">
+        <p1>Hay algo en particular que te guste del fundador que has escogido ?</p1>
+        <form id="ppf">
+            <textarea name="message" rows="8" cols="40" placeholder="Me gusta este fundador porque..." required></textarea>
         </form>
-        <form action="/Formulario/que_en_penses_enviat.html">
+        <form action="/Formulario/que_en_penses_enviat.html" id="boton">
             <input type="submit" value="Enviar">
         </form>
-        </form>
-        <form action="/index.html">
+        <form action="/index.html" id="boton">
             <input type="submit" value="Inicio">
         </form>
-    </body>
+        </div>
+        <div class="footer">
+        <h5>@2024 Seynabou Aidara (seynabou@ejemplo.com) i Aitana Oñate (aitana@ejemplo.com)</h5>
+        </div>
+        </body>
 </html>

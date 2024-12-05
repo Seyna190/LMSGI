@@ -1,27 +1,46 @@
-/* El titulo de la pagina */
-header {
-    text-align: center;
-    padding: 20px;
-    background-image: url(/Img/ghibli1.jpg);
+
+/* Index.html*/
+.index { 
+  background-image: url(/Img/inicio/index.jpeg);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-/* Desc.del estudio */
-p { 
-    text-align: center;
-    background-color: rgb(155, 240, 253);
-    padding: 70px;
-    border: 1px solid rgb(117, 225, 255);
+#inicio {
+position: absolute; /* Posiciona el cuadro de manera absoluta */
+top: 40px; /* Más distancia desde la parte superior para no tocar el menú */
+right: 30px; /* Más distancia desde el borde derecho */
+left: 800px;
+bottom: 800px;
+height: fit-content;
+padding: 25px; /* Espaciado interno mejorado */
+background-color: rgba(111, 195, 247, 0.993); /* Fondo blanco con transparencia */
+border-radius: 15px; /* Esquinas más redondeadas */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más definida para un diseño moderno */
+border: 2px solid rgba(0, 0, 0, 0.2); /* Borde sutil */
+text-align:left; /* Alineación del texto */
+max-width: 800px; /* Reduce un poco el ancho máximo */
+line-height: 1.6; /* Mejora la legibilidad del texto */
+font-size: 15px; /* Tamaño de fuente legible */
+color: #333; /* Color de texto para mejor contraste */
 }
 
-/* menu */
+/*-------------------------------menu----------------------------------*/
 ul {
     list-style-type:none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(100, 15, 238);
     font-size: 13px;
+    font-weight: 700;
     width: 100%;
+    background-color: rgb(15, 204, 238);
+    position: top static;
 }
 li {
     float: left;
@@ -33,10 +52,10 @@ li a, .opciones {
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover, .OD:hover .opciones {
+li a:hover, .desplegable:hover .opciones {
     background-color: rgb(127, 219, 240);
 }
-li.OD {
+li.desplegable {
     display: inline-block;
 }
 .contenido {
@@ -56,22 +75,23 @@ li.OD {
 }
 .contenido a:hover {background-color: rgb(241, 241, 241);}
   
-.OD:hover .contenido {
+.desplegable:hover .contenido {
     display: block;
 }
 
-/* peliculas*/
+/*--------------------------- peliculas--------------------------------*/
 *{
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: Arial;
     padding: 10px;
     background: #f1f1f1;
   }
-  
-  /* PELICULAS*/
+  #h5 {
+    color: white;
+  }
   /*titulo de cada peli*/
 .chi { 
   font-family: arial;
@@ -298,12 +318,13 @@ li.OD {
   
   /* Footer */
   .footer {
-    padding: 20px;
+    padding: 5px;
     text-align: center;
     background: #ddd;
-    margin-top: 20px;
+    margin-top: 5px;
+    color: #000;
   }
-  
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
@@ -319,63 +340,350 @@ li.OD {
       width: 100%;
     }
   }
-/*Barra navegacion vertical*/
-.barrahorit {
-  list-style-type: none;
+
+/*---------------------------Museo-------------------------------------*/
+/* Configuración general */
+body, html {
   margin: 0;
   padding: 0;
-  width: 200px;
-  background-color: rgba(175, 231, 251, 0.99);
-}
-
-.contbarra a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color on hover */
-.contbarra a:hover {
-  background-color: rgb(255, 253, 253);
-  color: rgb(12, 12, 12);
-}
-/* Museo*/
-* {
+  font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
-body {
+/* Estilo de la sección del museo */
+.section-museum {
+  position: relative;
+  height: 100vh; /* Ocupa toda la pantalla */
+  width: 100%;
+  background: url(/Img/Museo_ghibli/museo.webp) no-repeat center center/cover; /* Fondo del museo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+/* Caja de información */
+.info-box {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+}
+#ub {
+    text-align: center;
+    background-color: rgb(253, 219, 155);
+    color: rgb(4, 26, 82);
+}
+#pre {
+  text-align: center;
+    background-color: rgb(253, 219, 155);
+    color: rgb(4, 26, 82);
+}
+#hora {
+  text-align: center;
+    background-color: rgb(253, 219, 155);
+    color: rgb(4, 26, 82);
+}
+/* Estilo del texto */
+.info-box h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-box {
+      top: 5%;
+      right: 5%;
+      max-width: 250px;
+      padding: 15px;
+  }
+}
+
+/* Parque temático*/
+/* Configuración general */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Animación de fondo */
+@keyframes backgroundChange {
+  0% { background: url(/Img/Parque_ghibli/parque\ ghibli3.1.jpg) no-repeat center center/cover; }
+  33% { background: url(/Img/Parque_ghibli/parque\ ghibli\ 2.jpg) no-repeat center center/cover; }
+  66% { background: url(/Img/Parque_ghibli/parque\ ghibli.jpg) no-repeat center center/cover; }
+  100% { background: url(/Img/Parque_ghibli/parque\ ghibli\ 4.jpg) no-repeat center center/cover; }
+}
+/* Estilo de la sección del parque */
+.section-park {
+  position: relative;
+  height: 100vh; /* Ocupa toda la pantalla */
+  width: 100%;
+  animation: backgroundChange 15s infinite; /* Cambia el fondo cada 15 segundos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+/* Caja de información */
+.info-box {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+}
+#ub {
+  text-align: center;
+  background-color: rgb(253, 219, 155);
+  color: rgb(4, 26, 82);
+}
+#pre {
+text-align: center;
+  background-color: rgb(253, 219, 155);
+  color: rgb(4, 26, 82);
+}
+#hora {
+text-align: center;
+  background-color: rgb(253, 219, 155);
+  color: rgb(4, 26, 82);
+}
+/* Estilo del texto */
+.info-box h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.info-box p {
+  margin: 5px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-box {
+      top: 5%;
+      right: 5%;
+      max-width: 250px;
+      padding: 15px;
+  }
+}
+/*------------------------------------Galeria-------------------------*/
+/* Configuración general */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  color: white
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #20232a;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+/* Galería */
+/* Estilo general de la sección de galería */
+#galeria {
+  padding: 50px 20px;
+  background-color: #eaf4fc; /* Azul claro de fondo */
+  text-align: center;
+}
+
+/* Contenedor principal de la galería */
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles */
+  gap: 20px; /* Espaciado entre imágenes */
+  justify-items: center;
+}
+
+/* Estilo para cada imagen */
+.item {
+  overflow: hidden;
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar las imágenes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que las imágenes se ajusten bien al contenedor */
+  border-radius: 10px; /* Redondea las esquinas de las imágenes */
+}
+
+/* Efecto hover */
+.item:hover {
+  transform: scale(1.05); /* Ampliación suave al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra más intensa */
+}
+/* Contenedor del lightbox */
+#lightbox {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Imagen en el lightbox */
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6); /* Sombra para destacar */
+}
+
+/* Botón para cerrar */
+#close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  z-index: 1100;
+  transition: color 0.3s ease;
+}
+
+#close-lightbox:hover {
+  color: #ff0000; /* Rojo al pasar el cursor */
+}
+
+/*-------------------------------------------------------menu vertical (peliculas)------------------------------------------------------------*/
+/* Sidebar vertical */
+.sidebar {
+  position: fixed;
+  right: 2;
+  width: 380px;
+  background-color: black;
+  padding: 5px 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  color: white;
+  overflow-y: auto scroll;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
-/* Left and right column */
-.column.side {
-  width: 15%;
-}
-.museo {
-	background-image: url(/Img/museo.webp)
-  height: 50%
-}
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-/* Middle column */
-.column.middle {
-  width: 70%;
+
+.sidebar ul li {
+  margin-bottom: 15px;
 }
 
-/* Clear floats after the columns */
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
+.sidebar a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side, .column.middle {
-    width: 100%;
-  }
+.sidebar a:hover {
+  color: rgb(229, 238, 241);
+}
+
+/* Ajustar el contenido principal para que no quede cubierto por el sidebar */
+main {
+  margin-left: 220px; /* Espacio para el sidebar */
+  padding: 20px;
+}
+/*------------------------------------------------creadores/ formulario/nosotras--------------------------------------------------------------*/
+/*imagenes creadores*/
+#imga {
+  width: 220px;
+  height: 250px;
+}
+/*boton formulario*/
+#boton {
+color: white;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+}
+.quep {
+  padding: 15px;
+  text-align: center;
+  background: #d39c9c;
+  margin-top: 20px;
+}
+.cualf {
+  padding: 20px;
+  text-align: center;
+  background: #d39c9c;
+  margin-top: 20px;
+}
+.cualg {
+  padding: 20px;
+  text-align: center;
+  background: #d39c9c;
+  margin-top: 20px;
+}
+.cualff {
+  padding: 20px;
+  text-align: center;
+  background: #d39c9c;
+  margin-top: 20px;
+}
+.algo {
+  padding: 30px;
+  text-align: center;
+  background: #d39c9c;
+  margin-top: 20px;
+}
+#ppf {
+  padding-top: 15px;
+}
+/*quiénes somos*/
+#imgn {
+  width: 450px;
+  height: 450px;  
+  padding: 20px;
+}
+.imgsa {
+  text-align: center;
+  color: #000;
+}
+#imgal {
+  width: 350px;
+  height: 400px;  
+  padding: 20px;
+}
+
+
