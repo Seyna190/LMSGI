@@ -30,17 +30,16 @@ font-size: 15px; /* Tamaño de fuente legible */
 color: #333; /* Color de texto para mejor contraste */
 }
 
-/*-------------------------------menu----------------------------------*/
+/*---------------------------------------------------------------menu-----------------------------------------------------------------------------*/
 ul {
-    list-style-type:none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 13px;
-    font-weight: 700;
-    width: 100%;
-    background-color: rgb(15, 204, 238);
-    position: top static;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 700;
+  width: 100%;
+  background-color: rgb(15, 204, 238);
 }
 li {
     float: left;
@@ -482,7 +481,7 @@ text-align: center;
       padding: 15px;
   }
 }
-/*------------------------------------Galeria-------------------------*/
+/*-----------------------------------------------------------------------------------Galeria------------------------------------------------------*/
 /* Configuración general */
 body, html {
   margin: 0;
@@ -510,7 +509,6 @@ header p {
   font-size: 18px;
 }
 
-/* Galería */
 /* Estilo general de la sección de galería */
 #galeria {
   padding: 50px 20px;
@@ -590,14 +588,12 @@ header p {
 .sidebar {
   position: fixed;
   right: 2;
-  width: 380px;
+  width: 378px;
   background-color: black;
-  padding: 5px 10px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   color: white;
-  overflow-y: auto scroll;
+  margin-bottom: 5px;
 }
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -611,7 +607,7 @@ header p {
 .sidebar a {
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 12.9px;
   transition: color 0.3s ease;
 }
 
