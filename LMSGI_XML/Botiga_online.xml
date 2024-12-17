@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- la concatenacio esta como el culo-->
+<TiendaOnline>
+    <mujer>
+        <producto codigo="1926">
+            <nombre>Pantalones rectos de cordón</nombre>
+            <img source="https://soyunlink/0cUGSH" img_not_found="Pantalones rectos de cordón"/>
+            <categoria subcat="largos">Pantalones</categoria>
+            <desc>
+            Pantalones de vestir rectas con cintura elástica y cordón de ajustamiento del mismo tejido. Incorporan dos bolsillos delanteros.
+            </desc>  
+            <precio>15,99</precio>
+            <disponibilidad>En estoc</disponibilidad>
+        </producto>
+        <producto codigo="4856">
+            <nombre>Vestido terciopelo lazada brillante</nombre>
+            <img source="https://soyunlink/G3Rp6Y" img_not_found="Vestido terciopelo lazada brillante"/>
+            <categoria subcat="cortos">Vestidos</categoria>
+            <desc>
+            Traje corto de manga corta caída. Cuenta con una lazada con brillanteces a la parte posterior de la pieza y una caída natural.
+            </desc>  
+            <precio>17,99</precio>
+            <disponibilidad>Agotado</disponibilidad>
+        </producto>
+    </mujer>
+    <hombre>
+        <producto codigo="2345">
+            <nombre>Botas acordonadas</nombre>
+            <img source="https://soyunlink/woiejd" img_not_found="Botas acordonadas"/>
+            <categoria subcat="Botas">Calzado</categoria>
+            <desc>
+            Zapatos tipos bota para hombre. Cierre mediante cordones. Pasadores metálicos. Repunte al corte.
+            </desc>
+            <precio>32,99</precio>
+            <disponibilidad>En estoc</disponibilidad>
+        </producto>
+        <producto codigo="7867">
+            <nombre>Riñonera Hummel</nombre>
+            <img source="https://soyunlink/iusnfg" img_not_found="Riñonera Hummel"/>
+            <categoria subcat="riñonera">Bolsos y mochilas</categoria>
+            <desc>
+            Bolsa tipo riñonera para hombre. Detalle logo a contraste a la parte delantera. Único compartimento con cierre mediante cremallera. Mango ajustable con cierre deportivo.
+            </desc>
+            <precio>15,99</precio>
+            <disponibilidad>Agotado</disponibilidad>
+        </producto>
+    </hombre>
+    <infantil>
+        <nino>
+            <producto codigo="5431">
+                <nombre>Zapatillas retro Hummel</nombre>
+                <img source="https://soyunlink/sdghfg" img_not_found=""/>
+                <categoria subcat="Zapatillas">Calzado</categoria>
+                <desc>
+                Bolsa tipo riñonera para hombre. Detalle logo a contraste a la parte delantera. Único compartimento con cierre mediante cremallera. Mango ajustable con cierre deportivo.
+                </desc>
+                <precio>15,99</precio>
+                <disponibilidad>Agotado</disponibilidad>
+            </producto>
+        </nino>
+        <nina>
+            <producto codigo="8234">
+                <nombre>Falda de cuadros</nombre>
+                <img source="https://soyunlink/uigyvn" img_not_found="Falda de cuadros"/>
+                <categoria subcat="cortos">Faldas</categoria>
+                <desc>
+                Falda con cintura elástica y cordón de ajustamiento. Cuenta con costura que le aporta vuelo a la pieza. Está confeccionada en un tejido 100% algodón.
+                </desc>
+                <precio>9,99</precio>
+                <disponibilidad>En estoc</disponibilidad>
+            </producto>
+        </nina>
+        <bebes>
+            <producto codigo="6235">
+                <nombre>Chándal básico</nombre>
+                <img source="https://soyunlink/asjhud" img_not_found="Chándal básico"/>
+                <categoria subcat="Deporte">Conjuntos</categoria>
+                <desc>
+                Conjunto de dos piezas compuesto por una sudadera y unos pantalones de felpa. La sudadera de manga larga y cuello redondo con cierre posterior de botones de presión. Y unos pantalones a juego con goma elástica en la cintura y el bajo. Se pueden combinar entre sí o por separado.
+                </desc>
+                <precio>9,99</precio>
+                <disponibilidad>En estoc</disponibilidad>
+            </producto>
+            <producto codigo="9827">
+                <nombre>Pack 4 calcetines suaves</nombre>
+                <img source="https://soyunlink/jkhgbf" img_not_found="Pack 4 calcetines suaves"/>
+                <categoria subcat="Calcetines">Accesorios</categoria>
+                <desc>
+                Pack de 4 pares de calcetines gruesos. Están confeccionados con un tejido suave.
+                </desc>
+                <precio>5,99</precio>
+                <disponibilidad>En estoc</disponibilidad>
+            </producto>
+        </bebes>
+    </infantil>
+</TiendaOnline>
